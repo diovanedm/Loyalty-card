@@ -14,8 +14,6 @@ async function createUser(username, cpf, email, password) {
       email: email,
       password: password,
     });
-
-    await Card.create({});
     console.log("Conexão realizada");
   } catch (error) {
     console.error("Unable to connect to the database:", error);
